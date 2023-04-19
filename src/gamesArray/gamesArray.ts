@@ -1,0 +1,142 @@
+export type Genre = 'Aventuras' | 'Lógica' | 'Azar' | 'Estrategia' | 'Cartas'
+
+interface oneGame{
+    
+        name:string,
+        rate:number[],
+        id:number,
+        popular:boolean,
+        genre:Genre[]
+    
+}
+let gamesArray=<Array<oneGame>>[]
+gamesArray=[
+    {
+        name:'Piedra Papel o Tijeras',
+        rate:[1,2],
+        id:1,
+        popular:true,
+        genre:['Azar']
+    },
+    {
+        name:'Bingo',
+        rate:[1,2,3],
+        id:1,
+        popular:true,
+        genre:['Azar']
+    },
+    {
+        name:'Tres en raya',
+        rate:[1,2],
+        id:1,
+        popular:false,
+        genre:['Estrategia','Lógica']
+    },
+    {
+        name:'Dominó',
+        rate:[1,2,3],
+        id:1,
+        popular:false,
+        genre:['Estrategia','Lógica']
+    },
+    {
+        name:'Solitario',
+        rate:[1,2,3,4],
+        id:1,
+        popular:false,
+        genre:['Cartas','Azar','Estrategia','Lógica']
+    },
+    {
+        name:'Poker',
+        rate:[1,2,3,4,5],
+        id:1,
+        popular:true,
+        genre:['Cartas','Azar','Estrategia','Lógica']
+    },
+    {
+        name:'La oca',
+        rate:[1,2,3],
+        id:1,
+        popular:false,
+        genre:['Azar']
+    },
+        {
+        name:'Parchís 4',
+        rate:[1,2,3,4],
+        id:1,
+        popular:true,
+        genre:['Azar','Estrategia','Lógica']
+    },
+    {
+        name:'Ajedrez',
+        rate:[1,2,3,4],
+        id:1,
+        popular:false,
+        genre:['Estrategia','Lógica']
+    },
+    {
+        name:'Chinchón',
+        rate:[1,2,3],
+        id:1,
+        popular:false,
+        genre:['Cartas','Azar','Estrategia','Lógica']
+    },
+    {
+        name:'Cinquillo',
+        rate:[1,2,3],
+        id:1,
+        popular:false,
+        genre:['Cartas','Azar','Estrategia','Lógica']
+    },
+    {
+        name:'Damas',
+        rate:[1,2],
+        id:1,
+        popular:false,
+        genre:['Estrategia','Lógica']
+    },
+    {
+        name:'BlackJack',
+        rate:[1],
+        id:1,
+        popular:false,
+        genre:['Cartas','Azar','Estrategia','Lógica']
+    },
+    {
+        name:'Mus',
+        rate:[1],
+        id:1,
+        popular:false,
+        genre:['Cartas','Azar','Estrategia','Lógica']
+    },
+    {
+        name:'Parchís 6',
+        rate:[1,2,3,4,5],
+        id:1,
+        popular:true,
+        genre:['Azar']
+    },
+    {
+        name:'Pacman',
+        rate:[1,2,3,4],
+        id:1,
+        popular:true,
+        genre:['Azar','Estrategia','Lógica']
+    },
+    {
+        name:'Minecraft',
+        rate:[1,2,3,4,5],
+        id:1,
+        popular:true,
+        genre:['Aventuras']
+    },
+    {
+        name:'LOL',
+        rate:[1,2,3,4,5],
+        id:1,
+        popular:true,
+        genre:['Aventuras','Estrategia','Lógica']
+    }
+];
+
+export default gamesArray;

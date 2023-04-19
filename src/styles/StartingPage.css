@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#starting_page-container{
+    width: 100%;
+}
+.starting_page_button-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 100px 0;
+}
+.starting_page_button-container a button{
+    width: 500px;
+    height: 50px;
+    font-size: 20px;
+    font-family: 'Dongle', sans-serif;
+    font-family: 'DynaPuff', cursive;
+}
+#image{
+    margin: 50px 0;
+}
+#game_rules{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#game_rules h2{
+    font-size: 100px;
+    font-family: 'Dongle', sans-serif;
+    margin: 50px 0;
+}
+#game_rules h3{
+    font-size: 60px;
+    font-family: 'Dongle', sans-serif;
+    margin: 50px 0;
+}
+#game_rules p{
+    font-size: 20px;
+    padding: 0 50px;
+    
+}
+/*responsive*/
+
+@media screen and (max-width:900px) {
+    .starting_page_button-container a button{
+        width: 250px;
+        font-size: 15px;
+    }
+    #game_rules h2{
+        font-size: 60px;
+    }
+    #game_rules h3{
+        font-size: 35px;
+    }
+    #game_rules p{
+        font-size: 15px;
+        
+    }
+}

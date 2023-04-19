@@ -1,0 +1,67 @@
+.games-container{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 50px;
+    flex-wrap: wrap;
+}
+.game{
+    width: 350px;
+    height: 150px;
+    background-color: rgb(230, 54, 54);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    margin:50px 0;
+    cursor: pointer;
+    transition: all .3s ease-in;
+
+}
+.badge{
+    visibility: visible;
+}
+.text-bg-primary{
+    margin: 0 5px;
+}
+.stars{
+    display: none;
+}
+.stars-title{
+    color: #fff;
+    font-size: 15px;
+}
+.game-title{
+    font-size: 20px;
+    color: #fff;
+    visibility: visible;
+}
+.bi-star-fill{
+    color: yellow;
+    margin: 0 5px;
+}
+.game:hover {
+    background-color: rgb(114, 48, 48);
+}
+.game:hover .stars{
+    display: block;
+    position: absolute;
+}
+.game:hover .game-title{
+    visibility: hidden;
+}
+.game:hover .badge{
+    visibility: hidden;
+}
+.see_more_games-container{
+    display: flex;
+    justify-content: center;
+    margin: 50px 0;
+    padding: 50px 0;
+}
+/*responsive*/
+
+@media screen and (max-width:900px) {
+    .game{
+        padding: 0 10px;
+    }
+}
